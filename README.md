@@ -14,6 +14,7 @@ fly deploy
 
 ## Environment Variables
 
-| Name   | Description             |
-| :----- | :---------------------- |
-| `PORT` | Port for express server |
+| Name         | Description             |
+| :----------- | :---------------------- |
+| `PORT`       | Port for express server |
+| `SENTRY_DSN` | Sentry project DSN      |
