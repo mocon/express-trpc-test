@@ -1,11 +1,8 @@
 import { initTRPC } from '@trpc/server'
-import * as trpcExpress from '@trpc/server/adapters/express'
+import { CreateExpressContextOptions } from '@trpc/server/adapters/express'
 import { z } from 'zod'
 
-export const createContext = ({
-  req,
-  res,
-}: trpcExpress.CreateExpressContextOptions) => ({})
+export const createContext = ({ req, res }: CreateExpressContextOptions) => ({})
 
 type Context = Awaited<ReturnType<typeof createContext>>
 
